@@ -8,7 +8,7 @@ const INMUTABLE_CACHE = 'inmutable_v1';
 
 // Contenido Caché Estático (se moverá poco, es lo que generé de la app)
 const APP_SHELL = [
-    '/',
+    //'/',
     'index.html',
     'css/style.css',
     'img/favicon.ico',
