@@ -11,6 +11,14 @@
     font-size: 16px;
     background-color: #dde1e2; 
     width: 100%;
+
+    /* Evitar que al jalar la aplicación hacia abajo, se recarge*/
+    overscroll-behavior-y: contain;
+
+    /* vistas par el ios */
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
 }
 
 /* Personalizados */
