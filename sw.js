@@ -3,7 +3,7 @@ importScripts('js/sw-utils.js');
 
 // Nombre de los caches
 const STATIC_CACHE    = 'static-v3';
-const DYMANIC_CACHE   = 'dynamic_v1';
+const DYMANIC_CACHE   = 'dynamic_v2';
 const INMUTABLE_CACHE = 'inmutable_v1';
 
 // Contenido Caché Estático (se moverá poco, es lo que generé de la app)
@@ -55,7 +55,8 @@ self.addEventListener('activate', event => {
     const delCaches = caches.keys()
                         .then(keys => {
                             keys.forEach(key => {
-                                if (key !== STATIC_CACHE && key.includes('static')) {
+                                if ((key !== STATIC_CACHE && key.includes('static')) ||
+                                    (key !== DYMANIC_CACHE && key.includes('dynamic'))) {
                                     return caches.delete(key);
                                 }
                             });
