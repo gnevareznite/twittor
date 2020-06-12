@@ -2,8 +2,8 @@
 importScripts('js/sw-utils.js');
 
 // Nombre de los caches
-const STATIC_CACHE    = 'static-v3';
-const DYMANIC_CACHE   = 'dynamic_v2';
+const STATIC_CACHE    = 'static-v4';
+const DYMANIC_CACHE   = 'dynamic_v3';
 const INMUTABLE_CACHE = 'inmutable_v1';
 
 // Contenido Caché Estático (se moverá poco, es lo que generé de la app)
